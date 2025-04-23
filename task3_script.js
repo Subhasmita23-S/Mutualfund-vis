@@ -58,11 +58,11 @@ d3.csv("task3_mutualfunds_cleaned.csv").then(data => {
     })
     .on("mouseout", () => tooltip.style("visibility", "hidden"));
 
-  // nodes.append("rect")
-    // .attr("width", d => d.x1 - d.x0)
-    // .attr("height", d => d.y1 - d.y0)
-    // .attr("fill", d => d.data.fill)
-    // .attr("stroke", "#fff");
+    nodes.append("rect")
+     .attr("width", d => d.x1 - d.x0)
+     .attr("height", d => d.y1 - d.y0)
+     .attr("fill", d => d.data.fill)
+     .attr("stroke", "#fff");
 
     nodes.append("text")
     .attr("x", 6)
